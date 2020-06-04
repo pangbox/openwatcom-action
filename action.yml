@@ -6,6 +6,6 @@ inputs:
     default: 'all'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://pangbox/openwatcom-action:latest'
   args:
     - ${{ inputs.target }}
