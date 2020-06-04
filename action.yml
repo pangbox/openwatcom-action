@@ -1,0 +1,11 @@
+name: 'Compile with OpenWatcom'
+description: 'Compiles C code with OpenWatcom.'
+inputs:
+  target:
+    description: 'Target to build'
+    default: 'all'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.target }}
